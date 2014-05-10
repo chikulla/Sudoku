@@ -40,11 +40,11 @@ public class Solver {
         }else{
             x--;
         }
-        solve();
     }
     private void next(){
         if(x==8){
             if(y==8){
+                // never reach here please
                 return;
             }else{
                 y++;

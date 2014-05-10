@@ -9,6 +9,7 @@ import java.awt.Point;
 
 /**
  * Created by che on 2014/04/25.
+ * TODO:remove TextField & Create custom component.
  */
 public class NumberInputField extends AnchorPane {
     private final Point point;
@@ -25,9 +26,10 @@ public class NumberInputField extends AnchorPane {
     }
 
     public int getNumber() {
-        if (textField.getText().equals("")){
+        if (textField.getText().equals("")||textField.getText().equals(" ")){
             return 0;
         }
+        //TODO:fix it
         return Integer.valueOf(textField.getText());
     }
 
@@ -49,7 +51,7 @@ public class NumberInputField extends AnchorPane {
     }
 
     /**
-     * {@see http://fxexperience.com/2012/02/restricting-input-on-a-textfield/}
+     * @see http://fxexperience.com/2012/02/restricting-input-on-a-textfield/
      *
      * @return
      */
