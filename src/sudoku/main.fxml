@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<?import sudoku.MappedGridPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            fx:controller="sudoku.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <MappedGridPane gridLinesVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" fx:id="gridPane">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="40.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="40.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="40.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="40.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="40.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="40.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="40.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="40.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="40.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints prefHeight="40.0" vgrow="SOMETIMES"/>
+                <RowConstraints prefHeight="40.0" vgrow="SOMETIMES"/>
+                <RowConstraints prefHeight="40.0" vgrow="SOMETIMES"/>
+                <RowConstraints prefHeight="40.0" vgrow="SOMETIMES"/>
+                <RowConstraints prefHeight="40.0" vgrow="SOMETIMES"/>
+                <RowConstraints prefHeight="40.0" vgrow="SOMETIMES"/>
+                <RowConstraints prefHeight="40.0" vgrow="SOMETIMES"/>
+                <RowConstraints prefHeight="40.0" vgrow="SOMETIMES"/>
+                <RowConstraints prefHeight="40.0" vgrow="SOMETIMES"/>
+
+            </rowConstraints>
+        </MappedGridPane>
+        <Line endX="120.0" endY="360.0" startX="120.0" stroke="#f50202"/>
+        <Line endX="240.0" endY="360.0" startX="240.0" stroke="#f50202"/>
+        <Line endX="360.0" endY="120.0" startY="120.0" stroke="#f50202"/>
+        <Line endX="360.0" endY="240.0" startY="240.0" stroke="#f50202"/>
+    </children>
+</AnchorPane>
